@@ -27,7 +27,7 @@
     \vspace*{1in}
     \includegraphics[width=3.95in]{figures/uff-logo.png} \\
     \vspace*{1.2in}
-    \textbf{\huge Weekly Report Master Thesis}
+    \textbf{\huge Weekly Report.}
     \vspace{0.2in}\\
     \vspace{0.2in}
 }
@@ -50,39 +50,19 @@
 
 
 \section{Research Project}
-In this project, we are going to developing an object detection and tracking system using modern computer vision technology. The project delivers and implemented a tracking system. It consists of a hybrid of online and offline tracking algorithm is applicable to areas such as object tracking surveillance videos or semi-autonomous cameras technology \cite{re3} . It is applicable to areas as a stand-alone camera system or one that could easily be embedded into an even larger system. This report expressed how has been to development since April.
+In this project, we will develop a framework system that is a blend that combines object detection, visual object tracking, and one-class classification. This job aims to generate a set of track fragments of each person in the video. Each item is called a tracklet, and a collection of tracklets we called a gallery. Additionally, each of the gallery's tracklets involves the most representative candidate.
 
-\section{ Background Research  }
+The framework commits a squeezing of the number of queries that will provide to the re-identification algorithm. We will explain these details more later.
 
-Research and reading carried out as the background research related to the project are described. We will outline key themes that the platform where runs and described the general computer vision techniques included.
-
-\subsection{Docker}
-%\subsection{\textcolor{mygray}{Docker}}
-%\iffalse
-Docker is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package. See Figure \ref{fig:docker} 
+% #####
+the framework consist in consists of a hybrid of online and offline tracking algorithm is applicable to areas such as object tracking surveillance videos or semi-autonomous cameras technology \cite{re3} .
 
 
-\begin{figure}[hb]
-    \centering
-    \includegraphics[width=0.5\textwidth]{figures/docker.png}
-    \caption{The Docker daemon is a service that runs on your host operating system. It currently only runs on Linux because it depends on a number of Linux kernel features, but there are a few ways to run Docker on MacOS and Windows too. TheDocker daemon itself exposes a REST API.}
-    \label{fig:docker}
-\end{figure}
-%\fi
+It is applicable to areas as a stand-alone camera system or one that could easily be embedded into an even larger system. This report expressed how has been to development since august.
 
 
-\subsection{Nvidia \& Docker}
-%\subsection{\textcolor{mygray}{Nvidia \& Docker}}
-%\iffalse
-NVIDIA uses containers to develop, test, benchmark, and deploy deep learning (DL) frameworks and HPC applications. We have use building and deploying GPU containers at scale using NVIDIA-Docker.  A variety of customers used NVIDIA-Docker to containerize and run GPU accelerated workloads. See Figure \ref{fig:nvidia-docker}
 
-\begin{figure}[hb]
-    \centering
-    \includegraphics[width=0.4\textwidth]{figures/nvidia-docker.png}
-    \caption{As a result, the redesigned NVIDIA-Docker moved the core runtime support for GPUs into a  library called libnvidia-container. The library relies on Linux kernel primitives and is agnostic relative to the higher container runtime layers. This allows easy extension of GPU support into different container runtimes such as Docker.}
-    \label{fig:nvidia-docker}
-\end{figure}
-%\fi 
+
 
 
 \subsection{Algorithm}
