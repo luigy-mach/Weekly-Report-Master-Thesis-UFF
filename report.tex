@@ -25,9 +25,10 @@
 
 \title{
     \vspace*{1in}
-    \includegraphics[width=3.95in]{figures/uff-logo.png} \\
+    \includegraphics[width=3.25in]{figures/uff-logo.png} \\
     \vspace*{1.2in}
-    \textbf{\huge Weekly Report.}
+    % \textbf{\huge Weekly Report.}
+    \textbf{\huge Report.}
     \vspace{0.2in}\\
     \vspace{0.2in}
 }
@@ -50,19 +51,37 @@
 
 
 \section{Research Project}
-In this project, we will develop a framework system that is a blend that combines object detection, visual object tracking, and one-class classification. This job aims to generate a set of track fragments of each person in the video. Each item is called a tracklet, and a collection of tracklets we called a gallery. Additionally, each of the gallery's tracklets involves the most representative candidate.
+In this project, we will develop a framework system that is a blend that combines object detection, visual object tracking, and one-class classification. This job aims to generate a set of track fragments of each person in the video. Each item is called a tracklet, and a collection of tracklets we called a gallery. Additionally, each of the gallery's tracklets involves the best representative candidate.
 
 The framework commits a squeezing of the number of queries that will provide to the re-identification algorithm. We will explain these details more later.
 
+The input of the framework is simple raw video. For this test we use a \textbf{TownCentre} video with the following properties.
+\begin{enumerate}
+    \item Frames per second = 25 FPS.
+    \item Number of frames = 7500 frames.
+    
+    \item Duration of video = 5 minutes 0 seconds
+    \item Resolution of video = 1920 * 1080
+\end{enumerate}
+
+\subsection{Framework Architecture}
+
+We split this framework into two blocks, where the first part supports the generate tracklets and the second part chooses the best candidate or candidates. 
+
+
+
+
+
+
+
+
 % #####
-the framework consist in consists of a hybrid of online and offline tracking algorithm is applicable to areas such as object tracking surveillance videos or semi-autonomous cameras technology \cite{re3} .
+
+The framework consist in consists of a hybrid of online and offline tracking algorithm is applicable to areas such as object tracking surveillance videos or semi-autonomous cameras technology \cite{re3}.
+
 
 
 It is applicable to areas as a stand-alone camera system or one that could easily be embedded into an even larger system. This report expressed how has been to development since august.
-
-
-
-
 
 
 \subsection{Algorithm}
