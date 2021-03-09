@@ -15,71 +15,18 @@
 }
 
 
-@InProceedings{VOT2014,
-  Title                    = {The Visual Object Tracking VOT2014 challenge results},
-
-  Booktitle                = {Proceedings, European Conference on Computer Vision (ECCV) Visual Object Tracking Challenge Workshop},
-  Year                     = {2014},
-
-  Address                  = {Zurich, Switzerland},
-  Editor                   = {Agapito, Lourdes and Bronstein, Michael M. and Rother, Carsten},
-  Month                    = {September},
-  Pages                    = {191-217},
-  Publisher                = {Springer International Publishing},
-  Series                   = {Lecture Notes in Computer Science},
-  Volume                   = {8926},
-
-  Abstract                 = {The Visual Object Tracking challenge 2014, VOT2014, aims at comparing short-term single-object visual trackers that do not apply pre-learned models of object appearance. Results of 38 trackers are presented. The number of tested trackers makes VOT 2014 the largest benchmark on short-term tracking to date. For each participating tracker, a short description is provided in the appendix. Features of the VOT2014 challenge that go beyond its VOT2013 predecessor are introduced: (i) a new VOT2014 dataset with full annotation of targets by rotated bounding boxes and per-frame attribute, (ii) extensions of the VOT2013 evaluation methodology, (iii) a new unit for tracking speed assessment less dependent on the hardware and (iv) the VOT2014 evaluation toolkit that significantly speeds up execution of experiments. The dataset, the evaluation kit as well as the results are publicly available at the challenge website.},
-  Day                      = {6},
-  Doi                      = {10.1007/978-3-319-16181-5_14},
-  Gsid                     = {15633426501004735453},
-  ISBN                     = {978-3-319-16180-8},
-	gsid = {13408679558583258933,5030672482439802527,11385383912247455161},
-  Keywords                 = {Performance evaluation; Short-term single-object trackers; VOT},
-  Prestige                 = {international},
-  Status                   = {published},
-  Timestamp                = {2015.01.01},
-  Url                      = {http://personal.ee.surrey.ac.uk/Personal/S.Hadfield/papers/The\%20Visual\%20Object\%20Tracking\%20VOT2014\%20challenge\%20results.pdf}
+@article{DOC,
+  title={Learning deep features for one-class classification},
+  author={Perera, Pramuditha and Patel, Vishal M},
+  journal={IEEE Transactions on Image Processing},
+  volume={28},
+  number={11},
+  pages={5450--5463},
+  year={2019},
+  publisher={IEEE}
 }
 
-
-@InProceedings{VOT2016,
-  Title                    = {The Visual Object Tracking VOT2016 Challenge Results},
-  Booktitle                = {Proceedings, European Conference on Computer Vision (ECCV) workshops},
-  Year                     = {2016},
-  Month                    = {8} # oct,
- Pages                    = {777--823},
-  Abstract                 = {The Visual Object Tracking challenge VOT2016 aims at comparing short-term single-object visual trackers that do not apply pre-learned models of object appearance. Results of 70 trackers are presented, with a large number of trackers being published at major computer vision conferences and journals in the recent years. The number of tested state-of-the-art trackers makes the VOT 2016 the largest and most challenging benchmark on short-term tracking to date. For each participating tracker, a short description is provided in the Appendix. The VOT2016 goes beyond its predecessors by (i) introducing a new semi-automatic ground truth bounding box annotation methodology and (ii) extending the evaluation system with the no-reset experiment. The dataset, the evaluation kit as well as the results are publicly available at the challenge website (http:// votchallenge. net).},
-  Doi                      = {10.1007/978-3-319-48881-3_54},
-  Timestamp                = {2016.11.25},
-	gsid = {13408679558583258933,5030672482439802527,11385383912247455161},
-  Url                      = {http://dx.doi.org/10.1007/978-3-319-48881-3_54}
-}
-
-
-
-@Article{Hou2017,
-author="Hou, Li
-and Wan, Wanggen
-and Hwang, Jenq-Neng
-and Muhammad, Rizwan
-and Yang, Mingyang
-and Han, Kang",
-title="Human tracking over camera networks: a review",
-journal="EURASIP Journal on Advances in Signal Processing",
-year="2017",
-month="Jun",
-day="05",
-volume="2017",
-number="1",
-pages="43",
-abstract="In recent years, automated human tracking over camera networks is getting essential for video surveillance. The tasks of tracking human over camera networks are not only inherently challenging due to changing human appearance, but also have enormous potentials for a wide range of practical applications, ranging from security surveillance to retail and health care. This review paper surveys the most widely used techniques and recent advances for human tracking over camera networks. Two important functional modules for the human tracking over camera networks are addressed, including human tracking within a camera and human tracking across non-overlapping cameras. The core techniques of human tracking within a camera are discussed based on two aspects, i.e., generative trackers and discriminative trackers. The core techniques of human tracking across non-overlapping cameras are then discussed based on the aspects of human re-identification, camera-link model-based tracking and graph model-based tracking. Our survey aims to address existing problems, challenges, and future research directions based on the analyses of the current progress made toward human tracking techniques over camera networks.",
-issn="1687-6180",
-doi="10.1186/s13634-017-0482-z",
-url="https://doi.org/10.1186/s13634-017-0482-z"
-}
-
-@article{DBLP:journals/corr/RedmonF16,
+@article{YOLO,
   author    = {Joseph Redmon and
                Ali Farhadi},
   title     = {{YOLO9000:} Better, Faster, Stronger},
@@ -92,4 +39,56 @@ url="https://doi.org/10.1186/s13634-017-0482-z"
   timestamp = {Mon, 13 Aug 2018 16:48:25 +0200},
   biburl    = {https://dblp.org/rec/bib/journals/corr/RedmonF16},
   bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{REID, 
+  title={An improved deep learning architecture for person re-identification},
+  author={Ahmed, Ejaz and Jones, Michael and Marks, Tim K},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={3908--3916},
+  year={2015}
+}
+
+@article{townCenterDataset,
+title= {Oxford Town Centre Dataset},
+keywords= {},
+author= {},
+abstract= {For a coarse gaze estimation system to be useful, many people must be tracked simultaneously in real-time and in the presence of frequent occlusions and other distractions such as animals or vehicles. Two tracking systems were developed, both of which were based on two important image measurements. The first measurement was the output of a head detector which was trained using Dalal & Trigg's HOG detection algorithm that has become standard for the purposes of pedestrian detection. Although HOG detection is generally slow, it has become suitable for real-time use due to efficient GPU implementations. The second type of measurement comes from sparse KLT tracking. Although it has been around for a long time, KLT corner tracking still provides an impressive amount of information from very little processing time.
+
+The first tracking system to be developed was based around a Kalman filter, however this proved to be susceptable to data association errors when the HOG detector failed. The second more recent approach uses Markov-Chain Monte-Carlo Data Association (MCMCDA) with an accurate error model. MCMCDA allows ambiguities to be resolved more efficiently, but also allows the tracking system to cope with temporary occlusions.
+
+The 'Town Centre' dataset was used to test tracking performance in both the CVPR 2011 and the BMVC 2009 papers.
+
+TownCentreXVID.avi (342MB) - The video file
+
+TownCentre-calibration.ci (<1K) - The camera calibration data. This is in a human-readable format. The ground plane is at z=0 in the world coordinates.
+
+TownCentre-groundtruth.top (5.3MB) - The hand labelled ground truth data. See below for a description of the 'top' file format. Note that the full body regions were estimated based on the head regions using the camera calibration with approximate human dimensions, so may be inaccurate.
+
+https://i.imgur.com/Ix0Gh7m.jpg
+
+## Tracker Output file format
+The ground truth and tracking output is provided in the '.top' file format. This consists of rows in comma-seperated variable (CSV) format:
+
+personNumber, frameNumber, headValid, bodyValid, headLeft, headTop, headRight, headBottom, bodyLeft, bodyTop, bodyRight, bodyBottom
+
+personNumber - A unique identifier for the individual person
+frameNumber - The frame number (counted from 0)
+headValid - 1 if the head region is valid, 0 otherwise
+bodyValid - 1 if the body region is valid, 0 otherwise
+headLeft,headTop,headRight,headBottom - The head bounding box in pixels
+bodyLeft,bodyTop,bodyRight,bodyBottom - The body bounding box in pixels
+For the purposes of tracking evaluation, full body regions were considered to be matched if they overlap by at least 50% and head regions were required to overlap by at least 25%.
+
+## Papers:
+
+- Colour Invariant Head Pose Classification in Low Resolution Video
+- Guiding Visual Surveillance by Tracking Human Attention
+- Stable Multi-Target Tracking in Real-Time Surveillance Video
+},
+terms= {},
+license= {},
+superseded= {},
+url= {https://web.archive.org/web/20190714174044/http://www.robots.ox.ac.uk:80/ActiveVision/Research/Projects/2009bbenfold_headpose/project.html}
 }
