@@ -11,6 +11,7 @@
 % \usepackage{outline} \usepackage{pmgraph} \usepackage[normalem]{ulem}
 % \usepackage{graphicx} \usepackage{verbatim}
 \usepackage{amssymb} %checklist
+\usepackage{hyperref}
 
 \usepackage{wasysym} %checkedbox
 \definecolor{mypink1}{rgb}{0.858, 0.188, 0.478}
@@ -75,7 +76,7 @@ We called the first part how to a cropping module. This module is responsible fo
 % \begin{figure}[htp]
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=15cm]{imgs/new_model_tesis_2021_part1.png}
+    \includegraphics[width=17cm]{imgs/new_model_tesis_2021_part1.png}
     \caption[test framework part 1]{The first part of the framework}
     \label{fig:framework_part1}
 \end{figure}\leavevmode\newline
@@ -83,7 +84,7 @@ We called the first part how to a cropping module. This module is responsible fo
 \begin{figure}[ht]
 % \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{imgs/new_model_tesis_2021_part2.png}
+    \includegraphics[width=17cm]{imgs/new_model_tesis_2021_part2.png}
     \caption[test framework part 2]{The second part of the framework}
     \label{fig:framework_part2}
 \end{figure}\leavevmode\newline
@@ -103,22 +104,43 @@ In the second module (see figure \ref{fig:framework_part2}), we have two algorit
 Creating our gallery, we sorted inliers to deal with their mean where the best inlier is most closely the mean, and we called the inlier representative image. We pick up the inlier representative for each tracklet to support our gallery. And finally, we require a query image and gallery for ReID.
 
 \section{Preliminary results}
-We process a TownCenter's video that has a duration of 5 min and has 7'500 frames. For this video, we get 136'099 crops of person. Through these results, we generated 6'972 tracklets where each tracklet has had 20 tracks of a maximum. 
-Our gallery for ReID has 6'655 images, and we obtain only the top 10 outcomes. Each of the results represents one tracklet that became easily plot in the video. We find the detection on the next list.
+We process a TownCenter's video that has a duration of 5 min and has 7500 frames. For this video, we get 136'099 crops of person. Through these results, we generated 6972 tracklets where each tracklet has had 20 tracks of a maximum. 
+\leavevmode\newline
 
+Our gallery has 13'023 images because we pickup two inliers of each tracklet, and we work with the top 10 outcomes of ReID. We remind each of these results to represent a unique tracklet that became easy to plot in the video. 
+\leavevmode\newline
 
-\begin{enumerate}
-    \item "inlier" - "time" = 0:00:12
-    \item "inlier" - "time" = 0:00:39
-    \item "inlier" - "time" = 0:01:10
-    \item "inlier" - "time" = 0:03:51
-    \item "inlier" - "time" = 0:00:04
-    \item "inlier" - "time" = 0:01:06
-    \item "inlier" - "time" = 0:03:41
-    \item "inlier" - "time" = 0:00:10
-    \item "inlier" - "time" = 0:01:09
-    \item "inlier" - "time" = 0:03:52
-\end{enumerate}
+\begin{itemize}
+
+\item We use the next figure for query \ref{fig:query_id_92}.
+\item  We plot the results on the next link: 
+\begin{itemize}
+    \item \href{https://youtu.be/xeDLmHiyjQk}{https://youtu.be/xeDLmHiyjQk}
+\end{itemize}
+\item  We show you a list of specific times when the detection seems.
+    \begin{itemize}
+        \item "inlier 0" - "time" = 0:00:12
+        \item "inlier 1" - "time" = 0:00:39
+        \item "inlier 2" - "time" = 0:01:10
+        \item "inlier 3" - "time" = 0:03:51
+        \item "inlier 4" - "time" = 0:00:04
+        \item "inlier 5" - "time" = 0:01:06
+        \item "inlier 6" - "time" = 0:03:41
+        \item "inlier 7" - "time" = 0:00:10
+        \item "inlier 8" - "time" = 0:01:09
+        \item "inlier 9" - "time" = 0:03:51
+    \end{itemize}
+
+\end{itemize}
+
+\begin{figure}[ht]
+% \begin{figure}[htp]
+    \centering
+    \includegraphics[width=2cm]{imgs/query_id_92.png}
+    \caption[query test]{Query for ReID}
+    \label{fig:query_id_92}
+\end{figure}\leavevmode\newline
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
