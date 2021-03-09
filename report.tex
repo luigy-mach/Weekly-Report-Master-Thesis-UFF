@@ -56,6 +56,7 @@ In this project, we will develop a framework system that is a blend that combine
 The framework commits a squeezing of the number of queries that will provide to the re-identification algorithm. We will explain these details more later.
 
 The input of the framework is simple raw video. For this test we use a \textbf{TownCentre} video with the following properties.
+
 \begin{enumerate}
     \item Frames per second = 25 FPS.
     \item Number of frames = 7500 frames.
@@ -68,10 +69,22 @@ The input of the framework is simple raw video. For this test we use a \textbf{T
 
 We split this framework into two blocks, where the first part supports the generate tracklets and the second part chooses the best candidate or candidates. 
 
+We called the first part how to a cropping module. This module is responsible for generated tracklets. The cropping module receives some arguments that make it a flexible module. We can customize a maximum length of tracklet. We can also decide whether to apply the model in each frame or a specific number of frames.  We can see the next figures [\ref{fig:framework_part1},\ref{fig:framework_part2}]
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{imgs/framework_part1.png}
+    \label{fig:framework_part1}
+    \caption[test framework part 1]{xxxxxxxxxx}
+\end{figure}
 
 
-
-
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{imgs/framework_part2.png}
+    \label{fig:framework_part2}
+    \caption[test framework part 2]{yyyyyyyyyyy}
+\end{figure}
 
 
 
@@ -145,16 +158,6 @@ The VOT challenges provide the visual tracking community with a precisely define
 %    \item Diagrams with the structure of your code. 
 %\end{itemize}
 %\fi
-
-\subsection{Opencv-python}
-OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library. OpenCV was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in the commercial products. Being a BSD-licensed product, OpenCV makes it easy for businesses to utilize and modify the code.
-
-\begin{itemize}
-    \item Often, we have to capture live stream with camera. OpenCV provides a very simple interface to this. 
-    \item we are using the in-built webcam of my laptop
-    \item Let’s capture a video from the camera, and split video frame per frame. 
-\end{itemize}
-
 
 
 \section{Progress}
